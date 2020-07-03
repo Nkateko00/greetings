@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded",function(){
     const greetButton = document.getElementById("greetButton");
     const input = document.getElementById("inputElement");
-    const message = document.getElementById("message");
+    const message = document.getElementById("alert");
     const myCounter = document.getElementById("counter");
     const resetButton = document.getElementById("resetButton");
     

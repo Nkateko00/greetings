@@ -19,6 +19,8 @@ function greetMeFactory(data){
             userMap[userName] = 0;
         }
     }
+
+    
     return{
         greetUser
     }
