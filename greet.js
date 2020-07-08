@@ -8,4 +8,6 @@ window.addEventListener("DOMContentLoaded",function(){
     var data = localStorage['greetedUsers'] ?JSON.parse(localStorage[greetedUsers]) : {};
     
     var greetings = greetMeFactory(data);
+
+    
 });
