@@ -20,7 +20,7 @@ function greetMeFactory(data){
             userMap[userName] = 0;
         }
     }
-    function greetCount(user){
+    function greetCount(){
        return Object.keys(userMap).length;
        //returns the key of the object instead of the value
     }
@@ -30,10 +30,18 @@ function greetMeFactory(data){
     }
     function resetData(){
        userMap = {};
+       //when the reset button is pressed map must be empty
     }
-    function getAllTheNames(){
-
-    }
+    function getAllTheNames(nameReceieved){
+        var specialCase = /[^A-Za-z]/g;
+        if(nameReceieved !== ""){
+            var noNumber = nameReceieved.replace(nameReceieved,"");
+            var lowerCase = noNumber.toLowerCase();
+            return lowerCase;
+        }
+          return "";
+        }
+    
     return{
         greetUser,
         greetCount,
