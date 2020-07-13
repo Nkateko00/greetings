@@ -35,7 +35,7 @@ function greetMeFactory(data){
     function getAllTheNames(nameReceieved){
         var specialCase = /[^A-Za-z]/g;
         if(nameReceieved !== ""){
-            var noNumber = nameReceieved.replace(nameReceieved,"");
+            var noNumber = nameReceieved.replace(specialCase,"");
             var lowerCase = noNumber.toLowerCase();
             return lowerCase;
         }
