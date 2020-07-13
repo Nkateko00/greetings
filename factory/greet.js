@@ -13,6 +13,7 @@ function greetMeFactory(data){
             return `Ahe, ${name}`;
             default :
             return `Hi, ${name}`;
+            //Remove JQuery
         }
     }
     function addUser (userName){
@@ -36,17 +37,32 @@ function greetMeFactory(data){
         var specialCase = /[^A-Za-z]/g;
         if(nameReceieved !== ""){
             var noNumber = nameReceieved.replace(specialCase,"");
-            var lowerCase = noNumber.toLowerCase();
+            var lowerCase = noNumber[0].toUpperCase() + noNumber.slice(1).toLowerCase();
+            //makes the first letter upper case and everything else lower case
             return lowerCase;
         }
           return "";
         }
+    function errorMessage(name,lang){
+        if(!name){
+            return "No name Entered"
+        }
+        if(!lang){
+            return "No language selected"
+        }
+        if(!name && !lang){
+            return "Enter Name and Select Language"
+        }
+
+    }
     
     return{
         greetUser,
         greetCount,
         getAllUsers,
         resetData,
+        addUser,
+        errorMessage,
         getAllTheNames
 
     }
