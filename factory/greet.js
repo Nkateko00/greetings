@@ -2,9 +2,9 @@ function greetMeFactory(data){
     var userMap = data || {};
 
 
-    function greetUser(name,languange){
+    function greetUser(name,language){
         addUser(name);
-        switch(languange){
+        switch(language){
             case "English":
             return `Hello, ${name}`;
             case "French":
