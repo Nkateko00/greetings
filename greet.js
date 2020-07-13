@@ -27,9 +27,6 @@ greetButton.addEventListener('click',function(){
             message.innerHTML = "Please enter your name";
         }
     }
-    else{
-            message.innerHTML = "Please choose your language";
-        }
 });
 resetButton.addEventListener("click",function(){
   greetingFactory.resetData();
