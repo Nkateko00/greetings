@@ -1,7 +1,6 @@
 const greetButton = document.getElementById("greetButton");
 const inputArea = document.getElementById("inputElement");
 const message = document.getElementById("alert");
-const message2 = document.getElementById("alertTwo");
 const myCounter = document.querySelector(".counter");
 const resetButton = document.getElementById("resetButton");
 
@@ -31,15 +30,17 @@ greetButton.addEventListener('click', function () {
             myCounter.innerHTML = greetingFactory.greetCount();
             localStorage["getUsers"] = JSON.stringify(greetingFactory.getAllUsers());
         } else {
-            message.innerHTML = "Please enter your name";
+            message.innerHTML = greetingFactory.errorMessage(inputOverall, chosenLanguage);
         }
+     }
+        else {
         message.innerHTML = greetingFactory.errorMessage(inputOverall, chosenLanguage);
     }
 });
 
-// setTimeout(function(){
-//     message.innerHTML("");
-// },6000);
+setTimeout(function(){
+    message.innerHTML = greetingFactory.errorMessage("");
+},6000);
 
 resetButton.addEventListener("click", function () {
     greetingFactory.resetData();
