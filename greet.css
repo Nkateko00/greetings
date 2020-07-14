@@ -1,23 +1,31 @@
-@media (min-width: 550px) {
+@media(min-width:800px) {
 .container {
-    display: flex;
-	padding : 5em;
-	width: 50%;
-    margin: 0 auto;
-    align-items: center;
-    background-color: pink;
+        height: 100vh;
+        width: 80vw;
+        margin: 0 auto;
+        background-color:whitesmoke;
+        margin: 6em;
+        padding: 3em;
+        text-align: center;
+        color : blue;
+        border-radius: 0.5em;
+        border: 1px solid #ddd
 }
 }
 button {
-    padding: 1.5em;
-    margin : 3.5em;
-    background-color: blue;
-    color :#FFF;
-    border-color: #1EAEDB
+    padding: 1em;
+    margin: 1.5em;
+    color : blue;
 }
 
-.radioContainer {
-	font-size: 4em; 
-    background-color: grey;
+.counter {
+    color :blueviolet;
+    font-size: 2em;
+    text-align: center;
+    /* padding: 1em; */
+    margin: 1.5em;
 }
-
+.radioContainer{
+    padding: 1em;
+    margin: 1.5em;
+}

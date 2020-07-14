@@ -38,9 +38,9 @@ greetButton.addEventListener('click', function () {
     }
 });
 
-setTimeout(function(){
-    message.innerHTML = greetingFactory.errorMessage("");
-},6000);
+// setTimeout(function(){
+//     message.innerHTML = greetingFactory.errorMessage("");
+// },6000);
 
 resetButton.addEventListener("click", function () {
     greetingFactory.resetData();
