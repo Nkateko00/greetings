@@ -5,14 +5,12 @@ function greetMeFactory(data){
     function greetUser(name,language){
         addUser(name);
         switch(language){
-            case "English":
-            return `Hello, ${name}`;
             case "French":
-            return `Bonjour, ${name}`;
+            return "Bonjour  " +name;
             case "Xitsonga":
-            return `Ahe, ${name}`;
-            default :
-            return `Hi, ${name}`;
+            return "Ahe  " +name;
+            case "English":
+            return "Hello " +name;
             //Remove JQuery
         }
     }
