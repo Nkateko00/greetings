@@ -44,14 +44,14 @@ function greetMeFactory(data){
           return "";
         }
     function errorMessage(name,lang){
-        if(!name){
-            return "No name Entered"
+        if(name === "" && !lang){
+            return "Please enter name and select a langauge"
         }
-        if(!lang){
+        else if(!lang){
             return "No language selected"
         }
-        if(!name && !lang){
-            return "Enter Name and Select Language"
+         else if(name === ""){
+            return "Please enter your name"
         }
 
     }
