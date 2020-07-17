@@ -38,7 +38,7 @@ greetButton.addEventListener('click', function () {
     }
     setTimeout(function(){
         message.innerHTML = "";
-    },8000);
+    },7000);
 });
 
 
