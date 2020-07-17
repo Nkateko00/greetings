@@ -43,7 +43,7 @@ function greetMeFactory(data){
         }
     function errorMessage(name,lang){
         if(name === "" && !lang){
-            alert("Please enter name and select a langauge");
+            alert("You fucking dumb? Enter your name please");
         }
         else if(!lang){
             alert("No language selected");
