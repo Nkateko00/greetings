@@ -30,15 +30,15 @@ greetButton.addEventListener('click', function () {
             myCounter.innerHTML = greetingFactory.greetCount();
             localStorage["getUsers"] = JSON.stringify(greetingFactory.getAllUsers());
         } else {
-            message.innerHTML = greetingFactory.errorMessage(inputOverall, chosenLanguage);
+            greetingFactory.errorMessage(inputOverall, chosenLanguage);
         }
      }
         else {
-        message.innerHTML = greetingFactory.errorMessage(inputOverall, chosenLanguage);
+        greetingFactory.errorMessage(inputOverall, chosenLanguage);
     }
     setTimeout(function(){
         message.innerHTML = "";
-    },6000);
+    },8000);
 });
 
 
